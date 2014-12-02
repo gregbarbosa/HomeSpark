@@ -18,13 +18,11 @@ class ViewController: UIViewController {
 
     @IBAction func switchPressedAction(sender: AnyObject) {
         spark()
-
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
         spark()
     }
 
@@ -60,7 +58,6 @@ class ViewController: UIViewController {
                     println("No errors.")
                 }
             }
-
 
         } else if (!switchObject.on) {
             switchStatusLabel.text = "Off"
