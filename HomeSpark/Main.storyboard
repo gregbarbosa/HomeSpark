@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HomeSpark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="69r-75-V9s" customClass="RAMPaperSwitch" customModule="HomeSpark" customModuleProvider="target">
+                                <rect key="frame" x="276" y="284" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchPressedAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="I4y-lf-cmf"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC0-3m-p1n">
+                                <rect key="frame" x="16" y="255" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sV8-Ax-Mpb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="69r-75-V9s" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2eu-UC-pM6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="69r-75-V9s" secondAttribute="bottom" constant="285" id="IFi-Nb-UFR"/>
+                            <constraint firstItem="69r-75-V9s" firstAttribute="top" secondItem="qC0-3m-p1n" secondAttribute="bottom" constant="8" symbolic="YES" id="X0Y-o2-Opn"/>
+                            <constraint firstItem="qC0-3m-p1n" firstAttribute="centerX" secondItem="69r-75-V9s" secondAttribute="centerX" id="Z6a-dz-sGu"/>
+                            <constraint firstItem="qC0-3m-p1n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="gZy-Dw-lOg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="switchObject" destination="69r-75-V9s" id="rDo-aq-4dh"/>
+                        <outlet property="switchStatusLabel" destination="qC0-3m-p1n" id="hYh-JD-GaW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
