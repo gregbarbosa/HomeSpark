@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private let deviceID = "<YourDeviceIDHere>"
-    private let accessToken = "<YourAccessTokenHere>"
+    private let deviceID = "48ff6e065067555038561287"
+    private let accessToken = "a059d7597a38ecccdfe6df3d440440a3b6ba764a"
 
     @IBOutlet weak var switchStatusLabel: UILabel!
     @IBOutlet weak var switchObject: RAMPaperSwitch!

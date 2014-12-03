@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -33,11 +33,23 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXC-J9-CkB">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="leZ-aM-81N" kind="show" id="RTM-gV-AMu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="OXC-J9-CkB" firstAttribute="centerX" secondItem="69r-75-V9s" secondAttribute="centerX" id="1DS-eM-62W"/>
                             <constraint firstItem="69r-75-V9s" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2eu-UC-pM6"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="69r-75-V9s" secondAttribute="bottom" constant="285" id="IFi-Nb-UFR"/>
+                            <constraint firstAttribute="bottom" secondItem="OXC-J9-CkB" secondAttribute="bottom" constant="20" symbolic="YES" id="WBc-Cj-Xvs"/>
                             <constraint firstItem="69r-75-V9s" firstAttribute="top" secondItem="qC0-3m-p1n" secondAttribute="bottom" constant="8" symbolic="YES" id="X0Y-o2-Opn"/>
                             <constraint firstItem="qC0-3m-p1n" firstAttribute="centerX" secondItem="69r-75-V9s" secondAttribute="centerX" id="Z6a-dz-sGu"/>
                             <constraint firstItem="qC0-3m-p1n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="gZy-Dw-lOg"/>
@@ -51,5 +63,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Card View-->
+        <scene sceneID="Xmy-oz-3Ub">
+            <objects>
+                <tableViewController id="leZ-aM-81N" customClass="CardView" customModule="HomeSpark" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AAd-SO-dOd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cardCell" rowHeight="200" id="E9Q-Rk-5XN" customClass="CardCell" customModule="HomeSpark" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9Q-Rk-5XN" id="0Bo-2L-oRx">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdB-jn-qgE">
+                                            <rect key="frame" x="8" y="8" width="584" height="184"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightening" translatesAutoresizingMaskIntoConstraints="NO" id="dH0-Ow-K7Y">
+                                                    <rect key="frame" x="232" y="32" width="120" height="120"/>
+                                                    <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="Zf4-bd-Ktj"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="dH0-Ow-K7Y" firstAttribute="top" secondItem="ZdB-jn-qgE" secondAttribute="top" constant="32" id="Mzs-8E-GRJ"/>
+                                                <constraint firstItem="dH0-Ow-K7Y" firstAttribute="centerY" secondItem="ZdB-jn-qgE" secondAttribute="centerY" id="bCk-uy-ySO"/>
+                                                <constraint firstItem="dH0-Ow-K7Y" firstAttribute="centerX" secondItem="ZdB-jn-qgE" secondAttribute="centerX" id="olJ-iv-ZPz"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZdB-jn-qgE" firstAttribute="leading" secondItem="0Bo-2L-oRx" secondAttribute="leadingMargin" id="0Nu-2T-Sz4"/>
+                                        <constraint firstItem="ZdB-jn-qgE" firstAttribute="top" secondItem="0Bo-2L-oRx" secondAttribute="topMargin" id="DS1-Zt-EW7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZdB-jn-qgE" secondAttribute="bottom" constant="-0.5" id="Rqe-3P-xlD"/>
+                                        <constraint firstItem="ZdB-jn-qgE" firstAttribute="trailing" secondItem="0Bo-2L-oRx" secondAttribute="trailingMargin" id="Uon-r0-cdG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.12986796797030742" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="cardView" destination="ZdB-jn-qgE" id="o2J-7a-Wax"/>
+                                    <outlet property="itemImage" destination="dH0-Ow-K7Y" id="Hce-F1-3X9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="leZ-aM-81N" id="SzE-ZX-ZTE"/>
+                            <outlet property="delegate" destination="leZ-aM-81N" id="WzN-8w-lWc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFV-f3-L35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="285"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="lightening" width="342" height="512"/>
+    </resources>
 </document>
