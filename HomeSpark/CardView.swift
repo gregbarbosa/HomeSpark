@@ -10,7 +10,7 @@ import UIKit
 
 class CardView: UITableViewController {
 
-    let items = ["Bed", "Desk Lamp", "Lamp", "Office Computer", "Televison"]
+    let items = ["Bed", "Desk Lamp", "Lamp", "Office Computer", "Television"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +41,8 @@ class CardView: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cardCell", forIndexPath: indexPath) as CardCell
-        
-//        cell.itemImage?.image = UIImage(named: "\(items[indexPath.row])")
+
+        cell.itemImage?.image = UIImage(named: "\(items[indexPath.row])")
         
         return cell
     }

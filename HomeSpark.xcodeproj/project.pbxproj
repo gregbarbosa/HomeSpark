@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		2775A6B01A2FA80800A8A0BD /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2775A6AF1A2FA80800A8A0BD /* CardCell.swift */; };
 		2775A6B21A2FAA4300A8A0BD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2775A6B11A2FAA4300A8A0BD /* CardView.swift */; };
-		27C274261A2E8403004483D6 /* RAMPaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C274251A2E8403004483D6 /* RAMPaperSwitch.swift */; };
 		27C274281A2E8432004483D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C274271A2E8432004483D6 /* Main.storyboard */; };
 		27C2742A1A2E843D004483D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C274291A2E843D004483D6 /* LaunchScreen.xib */; };
+		8B442D921A30324600C032A3 /* RAMPaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B442D911A30324600C032A3 /* RAMPaperSwitch.swift */; };
 		8B9C1BFD1A2D85F000428ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C1BFC1A2D85F000428ECC /* AppDelegate.swift */; };
-		8B9C1BFF1A2D85F000428ECC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C1BFE1A2D85F000428ECC /* ViewController.swift */; };
 		8B9C1C041A2D85F000428ECC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C1C031A2D85F000428ECC /* Images.xcassets */; };
 		8B9C1C131A2D85F000428ECC /* HomeSparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C1C121A2D85F000428ECC /* HomeSparkTests.swift */; };
 /* End PBXBuildFile section */
@@ -31,13 +30,12 @@
 /* Begin PBXFileReference section */
 		2775A6AF1A2FA80800A8A0BD /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		2775A6B11A2FAA4300A8A0BD /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		27C274251A2E8403004483D6 /* RAMPaperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMPaperSwitch.swift; sourceTree = "<group>"; };
 		27C274271A2E8432004483D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		27C274291A2E843D004483D6 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		8B442D911A30324600C032A3 /* RAMPaperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMPaperSwitch.swift; sourceTree = "<group>"; };
 		8B9C1BF71A2D85F000428ECC /* HomeSpark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeSpark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9C1BFB1A2D85F000428ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B9C1BFC1A2D85F000428ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B9C1BFE1A2D85F000428ECC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B9C1C031A2D85F000428ECC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8B9C1C0C1A2D85F000428ECC /* HomeSparkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeSparkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9C1C111A2D85F000428ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,19 +60,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2775A6B31A2FAA4900A8A0BD /* Cards */ = {
+		8B442D901A30324600C032A3 /* PaperSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				2775A6AF1A2FA80800A8A0BD /* CardCell.swift */,
-				2775A6B11A2FAA4300A8A0BD /* CardView.swift */,
-			);
-			name = Cards;
-			sourceTree = "<group>";
-		};
-		27C274241A2E8403004483D6 /* PaperSwitch */ = {
-			isa = PBXGroup;
-			children = (
-				27C274251A2E8403004483D6 /* RAMPaperSwitch.swift */,
+				8B442D911A30324600C032A3 /* RAMPaperSwitch.swift */,
 			);
 			path = PaperSwitch;
 			sourceTree = "<group>";
@@ -100,9 +89,8 @@
 		8B9C1BF91A2D85F000428ECC /* HomeSpark */ = {
 			isa = PBXGroup;
 			children = (
-				2775A6B31A2FAA4900A8A0BD /* Cards */,
-				8B9C1BFC1A2D85F000428ECC /* AppDelegate.swift */,
-				8B9C1BFE1A2D85F000428ECC /* ViewController.swift */,
+				2775A6AF1A2FA80800A8A0BD /* CardCell.swift */,
+				2775A6B11A2FAA4300A8A0BD /* CardView.swift */,
 				27C274271A2E8432004483D6 /* Main.storyboard */,
 				8B9C1BFA1A2D85F000428ECC /* Supporting Files */,
 			);
@@ -112,10 +100,11 @@
 		8B9C1BFA1A2D85F000428ECC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8B9C1BFB1A2D85F000428ECC /* Info.plist */,
+				8B9C1BFC1A2D85F000428ECC /* AppDelegate.swift */,
 				8B9C1C031A2D85F000428ECC /* Images.xcassets */,
 				27C274291A2E843D004483D6 /* LaunchScreen.xib */,
-				27C274241A2E8403004483D6 /* PaperSwitch */,
-				8B9C1BFB1A2D85F000428ECC /* Info.plist */,
+				8B442D901A30324600C032A3 /* PaperSwitch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -237,9 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9C1BFF1A2D85F000428ECC /* ViewController.swift in Sources */,
-				27C274261A2E8403004483D6 /* RAMPaperSwitch.swift in Sources */,
 				8B9C1BFD1A2D85F000428ECC /* AppDelegate.swift in Sources */,
+				8B442D921A30324600C032A3 /* RAMPaperSwitch.swift in Sources */,
 				2775A6B01A2FA80800A8A0BD /* CardCell.swift in Sources */,
 				2775A6B21A2FAA4300A8A0BD /* CardView.swift in Sources */,
 			);
