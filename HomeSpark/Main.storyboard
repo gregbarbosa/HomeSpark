@@ -31,7 +31,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TeD-d3-IM8" customClass="RAMPaperSwitch" customModule="HomeSpark" customModuleProvider="target">
-                                                    <rect key="frame" x="268" y="51" width="51" height="31"/>
+                                                    <rect key="frame" x="527" y="51" width="51" height="31"/>
                                                     <color key="onTintColor" red="1" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
@@ -45,8 +45,8 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="TeD-d3-IM8" firstAttribute="top" secondItem="ZdB-jn-qgE" secondAttribute="top" constant="51" id="B95-oJ-kHq"/>
-                                                <constraint firstItem="TeD-d3-IM8" firstAttribute="centerX" secondItem="cp0-ao-yrG" secondAttribute="centerX" id="TKZ-Hv-rCe"/>
+                                                <constraint firstItem="TeD-d3-IM8" firstAttribute="top" secondItem="ZdB-jn-qgE" secondAttribute="top" constant="51" id="DFb-Ur-rd6"/>
+                                                <constraint firstItem="TeD-d3-IM8" firstAttribute="trailing" secondItem="ZdB-jn-qgE" secondAttribute="trailingMargin" id="LQ2-bO-3th"/>
                                                 <constraint firstItem="cp0-ao-yrG" firstAttribute="centerX" secondItem="ZdB-jn-qgE" secondAttribute="centerX" id="dPJ-Fu-gh4"/>
                                                 <constraint firstItem="cp0-ao-yrG" firstAttribute="centerY" secondItem="ZdB-jn-qgE" secondAttribute="centerY" id="sOM-sD-EY0"/>
                                                 <constraint firstItem="cp0-ao-yrG" firstAttribute="top" secondItem="ZdB-jn-qgE" secondAttribute="top" constant="35" id="x3C-Rj-flH"/>

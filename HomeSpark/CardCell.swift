@@ -58,6 +58,8 @@ class CardCell: UITableViewCell {
         postRequest.HTTPMethod = "POST"
         
         if (paperSwitch.on) {
+            itemImage.tintColor = UIColor.whiteColor()
+            
             // Send command
             var command = "D7,HIGH"
             var bodyData = "access_token=\(accessToken)&params=\(command)"
@@ -75,6 +77,8 @@ class CardCell: UITableViewCell {
             }
             
         } else if (!paperSwitch.on) {
+//            itemImage.tintColor = UIColor(red: 138, green: 139, blue: 135, alpha: 1)
+            itemImage.tintColor = UIColor.grayColor()
             // Send command
             var command = "D7,LOW"
             var bodyData = "access_token=\(accessToken)&params=\(command)"
