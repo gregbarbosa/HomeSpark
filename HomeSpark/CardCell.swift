@@ -10,8 +10,8 @@ import UIKit
 
 class CardCell: UITableViewCell {
     
-    private let deviceID = "<YourDeviceIDHere>"
-    private let accessToken = "<YourAccessTokenHere>"
+    private let deviceID = "48ff6e065067555038561287"
+    private let accessToken = "a059d7597a38ecccdfe6df3d440440a3b6ba764a"
     
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var paperSwitch: RAMPaperSwitch!
@@ -35,7 +35,7 @@ class CardCell: UITableViewCell {
     
     func cardSetup() -> Void {
         cardView.alpha = 1.0
-        cardView.layer.masksToBounds = false
+        cardView.layer.masksToBounds = true
         cardView.layer.cornerRadius = 2.0
         cardView.layer.shadowColor = UIColor(white: 0.0, alpha: 0.35).CGColor!
         cardView.layer.shadowOffset = CGSizeMake(0.0, 1.0)

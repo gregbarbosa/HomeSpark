@@ -42,6 +42,7 @@ class CardView: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cardCell", forIndexPath: indexPath) as CardCell
 
+//        cell.layer.masksToBounds = true
         cell.itemImage?.image = UIImage(named: "\(items[indexPath.row])")
         
         return cell
