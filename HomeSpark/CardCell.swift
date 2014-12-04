@@ -10,8 +10,8 @@ import UIKit
 
 class CardCell: UITableViewCell {
     
-    private let deviceID = "48ff6e065067555038561287"
-    private let accessToken = "a059d7597a38ecccdfe6df3d440440a3b6ba764a"
+    private let deviceID = "<YourDeviceIDHere>"
+    private let accessToken = "<YourAccessTokenHere>"
     
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var paperSwitch: RAMPaperSwitch!
