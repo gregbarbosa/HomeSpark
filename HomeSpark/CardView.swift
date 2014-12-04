@@ -10,16 +10,12 @@ import UIKit
 
 class CardView: UITableViewController {
 
+    let items = ["Bed", "Desk Lamp", "Lamp", "Office Computer", "Televison"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.separatorColor = UIColor.clearColor()
+        self.navigationController?.navigationBarHidden = true
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,15 +34,16 @@ class CardView: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return items.count
+        
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cardCell", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("cardCell", forIndexPath: indexPath) as CardCell
+        
+//        cell.itemImage?.image = UIImage(named: "\(items[indexPath.row])")
+        
         return cell
     }
     

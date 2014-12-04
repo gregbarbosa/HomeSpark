@@ -9,21 +9,18 @@
 import UIKit
 
 class CardCell: UITableViewCell {
-
-    @IBOutlet weak var itemImage: UIImageView!
+    
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var paperSwitch: RAMPaperSwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
+    
     override func layoutSubviews() {
         cardSetup()
     }
@@ -31,12 +28,29 @@ class CardCell: UITableViewCell {
     func cardSetup() -> Void {
         cardView.alpha = 1.0
         cardView.layer.masksToBounds = false
-        cardView.layer.cornerRadius = 1
-        cardView.layer.shadowOffset = CGSizeMake(-0.2, -0.2)
+        cardView.layer.cornerRadius = 2
+        cardView.layer.shadowOffset = CGSizeMake(-0.2, 2)
         cardView.layer.shadowRadius = 1
         var path = UIBezierPath(rect: cardView.bounds)
         cardView.layer.shadowPath = path.CGPath
-        cardView.layer.shadowOpacity = 0.2
+        cardView.layer.shadowOpacity = 0.12
         
     }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        cardView.layer.shadowOffset = CGSizeMake(-0.2, 3)
+        cardView.layer.shadowOpacity = 0.12
+        
+        super.touchesBegan(touches, withEvent: event)
+        
+    }
+    
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        cardView.layer.shadowOffset = CGSizeMake(-0.2, 2)
+        cardView.layer.shadowOpacity = 0.12
+        
+        super.touchesEnded(touches, withEvent: event)
+        
+    }
+    
 }
