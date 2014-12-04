@@ -19,16 +19,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9Q-Rk-5XN" id="0Bo-2L-oRx">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdB-jn-qgE">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdB-jn-qgE" userLabel="CardView">
                                             <rect key="frame" x="8" y="8" width="584" height="134"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TeD-d3-IM8" customClass="RAMPaperSwitch" customModule="HomeSpark" customModuleProvider="target">
-                                                    <rect key="frame" x="527" y="51" width="51" height="31"/>
-                                                    <color key="onTintColor" red="1" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="paperSwitch:" destination="E9Q-Rk-5XN" eventType="valueChanged" id="uqb-3s-qdx"/>
-                                                    </connections>
-                                                </switch>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cp0-ao-yrG">
                                                     <rect key="frame" x="230" y="35" width="124" height="64"/>
                                                     <color key="tintColor" red="0.54117647059999996" green="0.5450980392" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,6 +30,13 @@
                                                         <constraint firstAttribute="width" constant="124" id="xcn-ru-DJF"/>
                                                     </constraints>
                                                 </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TeD-d3-IM8" customClass="RAMPaperSwitch" customModule="HomeSpark" customModuleProvider="target">
+                                                    <rect key="frame" x="527" y="51" width="51" height="31"/>
+                                                    <color key="onTintColor" red="1" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="paperSwitch:" destination="E9Q-Rk-5XN" eventType="valueChanged" id="uqb-3s-qdx"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>

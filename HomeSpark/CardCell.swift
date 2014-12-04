@@ -36,12 +36,13 @@ class CardCell: UITableViewCell {
     func cardSetup() -> Void {
         cardView.alpha = 1.0
         cardView.layer.masksToBounds = false
-        cardView.layer.cornerRadius = 2
-        cardView.layer.shadowOffset = CGSizeMake(-0.2, 2)
-        cardView.layer.shadowRadius = 1
+        cardView.layer.cornerRadius = 2.0
+        cardView.layer.shadowColor = UIColor(white: 0.0, alpha: 0.35).CGColor!
+        cardView.layer.shadowOffset = CGSizeMake(0.0, 1.0)
+        cardView.layer.shadowRadius = 1.5
         var path = UIBezierPath(rect: cardView.bounds)
         cardView.layer.shadowPath = path.CGPath
-        cardView.layer.shadowOpacity = 0.12
+        cardView.layer.shadowOpacity = 0.75
         
     }
     
@@ -65,9 +66,12 @@ class CardCell: UITableViewCell {
             NSURLConnection.sendAsynchronousRequest(postRequest, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
                 if ((error) != nil) {
                     println("Error: \(error)")
+                    
                 } else if (error == nil) {
-                    println("No errors.")
+                    // Print nothing
+                    
                 }
+                
             }
             
         } else if (!paperSwitch.on) {
@@ -79,9 +83,12 @@ class CardCell: UITableViewCell {
             NSURLConnection.sendAsynchronousRequest(postRequest, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
                 if ((error) != nil) {
                     println("Error: \(error)")
+                    
                 } else if (error == nil) {
-                    println("No errors.")
+                    // Print nothing
+                    
                 }
+                
             }
             
         }
@@ -96,8 +103,8 @@ class CardCell: UITableViewCell {
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        cardView.layer.shadowOffset = CGSizeMake(-0.2, 2)
-        cardView.layer.shadowOpacity = 0.12
+        cardView.layer.shadowOffset = CGSizeMake(0.0, 1.0)
+        cardView.layer.shadowOpacity = 1.0
         super.touchesEnded(touches, withEvent: event)
         
     }
