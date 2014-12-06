@@ -10,8 +10,8 @@ import UIKit
 
 class CardCell: UITableViewCell {
     
-    private let deviceID = "48ff6e065067555038561287"
-    private let accessToken = "a059d7597a38ecccdfe6df3d440440a3b6ba764a"
+    private let deviceID = "<YourDeviceID>"
+    private let accessToken = "<YourAccessToken>"
     
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var paperSwitch: RAMPaperSwitch!
@@ -77,8 +77,8 @@ class CardCell: UITableViewCell {
             }
             
         } else if (!paperSwitch.on) {
-//            itemImage.tintColor = UIColor(red: 138, green: 139, blue: 135, alpha: 1)
             itemImage.tintColor = UIColor.grayColor()
+            
             // Send command
             var command = "D7,LOW"
             var bodyData = "access_token=\(accessToken)&params=\(command)"
