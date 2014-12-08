@@ -26,10 +26,11 @@ class CardView: UITableViewController {
     
     func credentialsCheck() {
         // Confirms a user has inputted their access token and device ID.
-        var userSettings: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let userSettings: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         
         var deviceID = userSettings.objectForKey("device_ID") as String
         var accessToken = userSettings.objectForKey("access_Token") as String
+        
         var missingItem = String()
         
         if (accessToken.isEmpty && deviceID.isEmpty) {
