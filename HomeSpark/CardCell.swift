@@ -9,10 +9,11 @@
 import UIKit
 
 class CardCell: UITableViewCell {
+    var userSettings: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     
-    private let deviceID = "<YourDeviceID>"
-    private let accessToken = "<YourAccessToken>"
-    
+//    var deviceID = userSettings.objectForKey("device_ID") as String
+//    var accessToken = userSettings.objectForKey("access_Token") as String
+
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var paperSwitch: RAMPaperSwitch!
     @IBOutlet weak var itemImage: UIImageView!
@@ -47,6 +48,26 @@ class CardCell: UITableViewCell {
     }
     
     func spark() -> Void {
+        
+        // Confirms a user has inputted their access token and device ID.
+        var userSettings: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        var deviceID = userSettings.objectForKey("device_ID") as String
+        var accessToken = userSettings.objectForKey("access_Token") as String
+        
+        if (accessToken.isEmpty && deviceID.isEmpty) {
+            println("Both your Access Token and Device ID is missing.")
+            
+        } else if (accessToken.isEmpty) {
+            println("You are Access Token is missing.")
+            
+        } else if (deviceID.isEmpty) {
+            println("Your Device ID is missing.")
+            
+        } else {
+            
+        }
+        
         // URLS
         let baseURL = NSURL(string: "https://api.spark.io")
         let devicesURL = NSURL(string: "/v1/devices/\(deviceID)/led", relativeToURL: baseURL)
@@ -98,6 +119,7 @@ class CardCell: UITableViewCell {
         }
         
     }
+    
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         cardView.layer.shadowOffset = CGSizeMake(-0.2, 3)

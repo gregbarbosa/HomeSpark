@@ -12,6 +12,7 @@
 		27C274281A2E8432004483D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C274271A2E8432004483D6 /* Main.storyboard */; };
 		27C2742A1A2E843D004483D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C274291A2E843D004483D6 /* LaunchScreen.xib */; };
 		8B442D921A30324600C032A3 /* RAMPaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B442D911A30324600C032A3 /* RAMPaperSwitch.swift */; };
+		8B55E7C91A3515E200E83569 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8B55E7C81A3515E200E83569 /* Settings.bundle */; };
 		8B9C1BFD1A2D85F000428ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C1BFC1A2D85F000428ECC /* AppDelegate.swift */; };
 		8B9C1C041A2D85F000428ECC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C1C031A2D85F000428ECC /* Images.xcassets */; };
 		8B9C1C131A2D85F000428ECC /* HomeSparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C1C121A2D85F000428ECC /* HomeSparkTests.swift */; };
@@ -33,6 +34,8 @@
 		27C274271A2E8432004483D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		27C274291A2E843D004483D6 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8B442D911A30324600C032A3 /* RAMPaperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMPaperSwitch.swift; sourceTree = "<group>"; };
+		8B55E7C81A3515E200E83569 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		8B672D241A3530590050013F /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		8B9C1BF71A2D85F000428ECC /* HomeSpark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeSpark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9C1BFB1A2D85F000428ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B9C1BFC1A2D85F000428ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		8B9C1BEE1A2D85F000428ECC = {
 			isa = PBXGroup;
 			children = (
+				8B55E7C81A3515E200E83569 /* Settings.bundle */,
 				8B9C1BF91A2D85F000428ECC /* HomeSpark */,
 				8B9C1C0F1A2D85F000428ECC /* HomeSparkTests */,
 				8B9C1BF81A2D85F000428ECC /* Products */,
@@ -91,6 +95,7 @@
 			children = (
 				2775A6AF1A2FA80800A8A0BD /* CardCell.swift */,
 				2775A6B11A2FAA4300A8A0BD /* CardView.swift */,
+				8B672D241A3530590050013F /* MyPlayground.playground */,
 				27C274271A2E8432004483D6 /* Main.storyboard */,
 				8B9C1BFA1A2D85F000428ECC /* Supporting Files */,
 			);
@@ -207,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B55E7C91A3515E200E83569 /* Settings.bundle in Resources */,
 				27C274281A2E8432004483D6 /* Main.storyboard in Resources */,
 				27C2742A1A2E843D004483D6 /* LaunchScreen.xib in Resources */,
 				8B9C1C041A2D85F000428ECC /* Images.xcassets in Resources */,
